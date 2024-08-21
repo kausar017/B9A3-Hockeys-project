@@ -18,13 +18,27 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .bg-images-1 {
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("./Images/2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+        .bg-images-2 {
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("./Images/2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
+    <header class="container mx-auto ">
+        <!-- navbar section start -->
+        <nav class="lg:my-16 sm:my-5">
+            <div class="navbar lg:flex flex-row bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -43,10 +57,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-[50px] font-extrabold cursor-pointer">Hockey<span class="text-red-500">’</span>s</a>
+                    <a class="lg:text-5xl md:text-4xl font-extrabold cursor-pointer">Hockey<span
+                            class="text-red-500">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-base font-bold text-gray-500">
+                    <ul class="menu menu-horizontal px-1 text-base font-bold text-gray-500 gap-x-9">
                         <li><a class="hover:text-red-500">Home</a></li>
                         <li><a class="hover:text-red-500">About</a></li>
                         <li><a class="hover:text-red-500">Pages</a></li>
@@ -56,17 +71,137 @@
                 </div>
                 <div class="navbar-end gap-5">
                     <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
-                    <a class="btn text-xl font-bold font-manrope bg-[#FF4240] text-white">Get Ticket</a>
+                    <a class="btn lg:text-xl md:text-base font-bold font-manrope bg-[#FF4240] text-white">Get Ticket</a>
                 </div>
             </div>
         </nav>
+        <!-- navbar section end -->
+
     </header>
     <main>
+        <!-- bannar sectio start -->
+        <section class="container mx-auto">
+            <div>
+                <div class="carousel">
+                    <div id="slide1" class="carousel-item relative w-full mx-auto">
+                        <img class="max-h-[550px] w-[1170px] mx-auto" src="./Images/1.png" class="w-full" />
+                        <div class="absolute left-[15%] right-5 top-[90%] flex transform gap-x-10">
+                            <a href="#slide3" class="btn btn-circle  bg-black rounded-full text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle  bg-black rounded-full text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full mx-auto">
+                        <img class="max-h-[550px] w-[1170px] mx-auto" src="./Images/2.png" class="w-full" />
+                        <div class="absolute left-[15%] right-5 top-[90%] flex  transform gap-x-10">
+                            <a href="#slide1" class="btn btn-circle  bg-black rounded-full text-white">❮</a>
+                            <a href="#slide3" class="btn btn-circle  bg-black rounded-full text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full mx-auto">
+                        <img class="max-h-[550px] w-[1170px] mx-auto" src="./Images/3.png" class="w-full" />
+                        <div class="absolute left-[15%] right-5 top-[90%] flex transform gap-x-10">
+                            <a href="#slide2" class="btn btn-circle bg-black rounded-full text-white">❮</a>
+                            <a href="#slide1" class="btn btn-circle  bg-black rounded-full text-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-[550px] bg-black mx-auto relative -top-[200px] left-[240px] text-white p-7 rounded-xl sm:hidden max-md:hidden lg:block xl:block">
+                    <h3 class="font-manrope font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                    <p class="text-base font-normal font-manrope mt-2">Dit amet consectetur. Condimentum
+                        dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <div class="max-w-[550px] h-full bg-black mx-auto text-white p-7 lg:hidden">
+                    <h3 class="font-manrope font-extrabold text-2xl">Meet all the heroes from the field</h3>
+                    <p class="text-base font-normal font-manrope mt-2">Dit amet consectetur. Condimentum
+                        dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+        </section>
 
+        <!-- bannar sectio end -->
+
+        <!-- Professional Hockeys Club section start -->
+        <section class="container mx-auto">
+            <div>
+                <div class="max-w-[680px] mx-auto text-center font-manrope max-md:mt-8 max-lg:mt-8">
+                    <h1 class="text-4xl font-extrabold ">Professional Hockeys Club</h1>
+                    <p class="text-base font-semibold font-manrope mt-5 text-[#13131899]">Dit amet consectetur.
+                        Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+                <div class="flex flex-wrap place-content-around py-20">
+                    <div class="max-w-64 flex flex-col items-center gap-y-5 text-center py-8">
+                        <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                        <p class="text-xl font-semibold font-manrope">Prayer Facility</p>
+                        <p class="font-manrope font-normal text-base ">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                    <div class="max-w-64 flex flex-col items-center gap-y-5 text-center py-8">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                        <p class="text-xl font-semibold font-manrope">Prayer Facility</p>
+                        <p class="font-manrope font-normal text-base ">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                    <div class="max-w-64 flex flex-col items-center gap-y-5 text-center py-8">
+                        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                        <p class="text-xl font-semibold font-manrope">Prayer Facility</p>
+                        <p class="font-manrope font-normal text-base ">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                    <div class="max-w-64 flex flex-col items-center gap-y-5 text-center py-8">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                        <p class="text-xl font-semibold font-manrope">Prayer Facility</p>
+                        <p class="font-manrope font-normal text-base ">Amet consectetur. Condimentum dignissim
+                            adipiscing .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club section end -->
+
+        <!-- Program Sections section start -->
+        <section class="container mx-auto">
+            <div>
+                <div class="flex flex-col gap-y-7 text-center max-w-[600px] mx-auto">
+                    <h1 class="font-manrope text-4xl font-extrabold">Program Sections</h1>
+                    <p class="font-manrope text-base font-normal text-[#13131899]">Dit amet consectetur. Condimentum
+                        dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <div class="grid lg:grid-cols-2 md:grid-cols-1 justify-items-center gap-x-6 mt-12">
+                    <!-- card-1 -->
+                    <div class="bg-images-1 p-5 text-white">
+                        <h1 class="pt-[95px] text-3xl font-manrope font-extrabold">Junior Program</h1>
+                        <p class="pt-3 font-manrope leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <button class="btn px-7 text-white bg-[#FF4240] border-none mt-6">Register Now!</button>
+                    </div>
+                    
+                    <!-- card-1 -->
+                    <div class="bg-images-2 p-5 text-white">
+                        <h1 class="pt-[95px] text-3xl font-manrope font-extrabold">Junior Program</h1>
+                        <p class="pt-3 font-manrope leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <button class="btn px-7 text-white bg-[#FF4240] border-none mt-6">Register Now!</button>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Program Sections section end -->
     </main>
     <footer>
 
     </footer>
+
+
+
 </body>
 
 </html>
